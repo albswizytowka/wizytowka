@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="">
+	<title></title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+</head>
+<body>
+    <div class="loader"><div class="loaderText">Wczytuje :/</div></div>
+    <main>
+         <div class="row">
+             <div class="l-col-6 s-col-4 leftSide">
+                 <div class="phWrapp">
+                     <div class="imgWrap">
+                         <img class="me" src="images/1.jpg">
+                     </div>
+                     <h1>Albert Walicki</h1>
+                     <h2>Warszawa</h2>
+                     <h3>Ateista, antynatalista, vege, hetero</h3>
+                 </div>
+             </div>
+             <div class="l-col-6  s-col-4 rightSide flipper">
+                 <div class="about">
+                     <div >
+                         <p>Mam 24 lata, co dla niektórych może wydać się dziwne, bo wyglądam 'staro'.</p>
+                         <p>Pracuje zdalnie jako front-end developer, czyli tworze takie gówna jak to tutaj. Chociaż na to nie mam wcale pomysłu, bo 'grafik', ze mna ultra marny.</p>
+                         <p>W Warszawie mieszkam dopiero kilka miesięcy, chociaż całe 8 lat dojeżałem tu na studia / do LO.</p>
+                         <p>Kocham zwierzaczki, w domu rodzinnym mam ich całe zoo. I jest to np. mój synek Franio papużek <a href="https://www.youtube.com/watch?v=tz4xDqXAAB8" target="_blank"> filmik z Franiem</a>.</p>
+                         <p>Mam 6 tatuaży, a kiedyś chciałbym być nimi pokryty w całości.</p>
+                         <p>Interesuje się kinem, polecam karte unlimited do Cinema City. Od marca byłem ponad 40 razy w kinie</p>
+                         <p>Prawdopodobnie umre ze słuchawkami w uszach (może mnie walnie autobus :/)</p>
+                         <p>Tak, lubie sobie żartować ze swojej śmierci. A jak serio umrę to nie płaczcie po mnie :/</p>
+                         <p>Kocham Sci-fi, fantasy.</p>
+                         <p>Czasem gram w Dote, jak mi się strasznie nudzi.</p>
+                         
+                     </div>
+                     <a href="#" class="page1">Dalej...</a>
+                </div>
+                 <div class="about2">
+                     <div>
+                         <p>Nie mam zbyt wielu znajomych, więc chętnie poznam nowe osoby. Czy to przez internet, czy z Warszawy</p>
+                         <p>Lubie rozmawiać z ludmi o ich problemach. W taki sposób poznałem jedynego przyjaciela </p>
+                         <p>Staram się jeść wegańsko, chociaż czasem mleko w proszku mnie dobija</p>
+                        <p> No i nadużywam 'XD' oraz ' :/ '. Chociaż staram się wyznawać ' <a class="popup"  href="#">filozofie XD</a> '.</p>
+                     </div>
+                     <a href="#" class="page2">Wstecz...</a>
+                </div>
+             </div>
+             
+             <div class="tr"></div>
+             
+         </div>
+    </main>
+    <div class="popupWrap">
+     <div class="popupContent">
+         <p>Odkąd zacząłem wyznawać "xD" moje życie stało się spokojniejsze. Nie denerwuję się już prawie wcale, kiedy spotykają mnie sytuacje stresowe, myślę sobie xD i wszystko staje się prostsze.</p>
+         <p>Naprawdę polecam ten styl życia. Wcale nie robi ze mnie lenia tylko osobę które nie denerwuje się z dupy tak jak kiedyś.</p>
+
+         <p>Kolos? xD</p>
+         <p>Prezentacja przed w chuj dużą grupą nieznajomych ludzi? xD</p>
+         <p>Wyjebali z roboty? xD</p>
+         <p>Wyśmiała cię jakaś laska na imprezie? xD</p>
+         <p>Zrobiłeś coś pojebanego? xD</p>
+
+         <p>I od razu lżej i można się wziąć za siebie a nie płakać czy się wkurwiać.</p>
+
+         <p>uczucie 10/10</p>
+     <a class="close" href="#">Zamknij XD</a>
+     </div>
+ </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(window).on('load',function() {
+        $('main').delay(350).fadeIn();
+        $('.loader').delay(0).fadeOut();
+        $(".about2").hide();
+    })
+
+    
+    
+    $(".page1").on("click", function() {
+        $(".about2").show();
+        $(".about").hide();
+    })
+    $(".page2").on("click", function() {
+        $(".about").show();
+        $(".about2").hide();
+    })
+    
+    $(".popup").on('click', function() {
+        $(".popupWrap").show();
+    })
+    $(".close").on('click', function() {
+        $(".popupWrap").hide();
+    })
+    
+    
+</script>
+</body>
+</html>
