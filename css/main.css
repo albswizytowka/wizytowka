@@ -2774,5 +2774,12 @@ h3 {
     margin: 0 auto;
   }
 }
+@media (max-width: 630px) {
+  main {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
