@@ -91,9 +91,11 @@
     
     $(".popup").on('click', function() {
         $(".popupWrap").show();
+        $("main").hide();
     })
     $(".close").on('click', function() {
         $(".popupWrap").hide();
+        $("main").show();
     })
     
     
